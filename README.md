@@ -4,4 +4,6 @@ O meu projeto de site, intitulado *"Proteja os Mares: A Vida Marinha em Extinç�
 
 Além disso, o projeto traz informações práticas e orientações claras sobre como *cada pessoa pode ajudar* a proteger os mares. O conteúdo foi cuidadosamente pensado para gerar impacto, educar e inspirar a ação. Acredito que este site, além de informar, pode mobilizar mais pessoas a tomar medidas concretas na preservação da vida marinha.
 
+Link para visualização: https://suelenribs.github.io/proteja-os-mares/
+
 Espero que gostem! ;D
