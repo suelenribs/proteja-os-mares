@@ -40,7 +40,7 @@ function pop(animal) {
 
     switch (animal) {
         case "an1":
-            pop_img.src = "baleiaazul.jpg";
+            pop_img.src = "Baleiaazul.jpg";
             pop_h.innerText = "Baleia Azul";
             pop_p.innerHTML = "<b>Poluição marinha:</b> Poluentes no oceano, como plásticos e produtos químicos, podem afetar a saúde das baleias.";
             break;
