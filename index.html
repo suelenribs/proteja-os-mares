@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Proteja os Mares</title>
+      <script type='text/javascript' src='http://www.youtube.com/iframe_api'></script>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Cabeçalho -->
+    <header>
+      <div>
+        <a href="#vme">Vidas Marinhas em Extinção</a>
+        
+        <a href="#pol">Poluição nos Oceanos</a>
+        
+        <a href="#ajd">Como Ajudar</a>
+      </div>
+    </header>
+
+
+    <!-- Banner inicial com vídeo de fundo -->
+    <section class="hero">
+      <div class="video-fundo">
+        <iframe id='playerId' type='text/html' width='1280' height='720' src='https://www.youtube.com/embed/_67ak1R1wsc?enablejsapi=1&rel=0&playsinline=1&autoplay=1&showinfo=0&autohide=1&controls=0&modestbranding=1&loop=1&showinfo=0&autohide=1' frameborder='0'></iframe>
+      </div>
+      <div class="container">
+        <div class="content">
+          <h1>Proteja os Mares</h1> <!-- titulo do projeto --> 
+          <h2>— A vida Marinha em perigo</h2>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Sessão com cards clicáveis -->
+    <section id="vme" class="ext">
+      <h2 class="section-h2">Animais ameaçados de extinção</h2>
+      <div class="container">
+        <div class="card an1" onclick="pop('an1')">
+          <div class="overl">
+            <h3 class="an-nam">Baleia Azul</h3>
+          </div>
+        </div>
+        
+        <div class="card an2" onclick="pop('an2')">
+          <div class="overl">
+            <h3 class="an-nam">Tubarão Branco</h3>
+          </div>
+        </div>
+        
+        <div class="card an3" onclick="pop('an3')">
+          <div class="overl">
+            <h3 class="an-nam">Corais</h3>
+          </div>
+        </div>
+        
+        <div class="card an4" onclick="pop('an4')">
+          <div class="overl">
+            <h3 class="an-nam">Atum Azul</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sessão informativa -->
+    <section id="pol" class="poll ext">
+      <div class="container">
+        <img class="img-side" src="poluicao.jpg">
+        <div class="text-side">
+          <h2 class="section-h2">Poluição</h2>
+          <p>A poluição marinha é um problema ambiental grave, causado principalmente pelo descarte inadequado de resíduos, como plásticos, produtos químicos, e esgoto, nos oceanos. Esses poluentes afetam a vida marinha, com animais como peixes, tartarugas e aves marinhas frequentemente ingerindo ou se enredando em detritos plásticos, o que pode levar à morte. Além disso, produtos químicos tóxicos podem contaminar ecossistemas aquáticos, prejudicando a cadeia alimentar. A poluição dos mares também afeta a saúde humana, já que muitos desses poluentes entram na cadeia alimentar através de frutos do mar contaminados.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Sessão de pesquisa -->
+    <section class="tosearch ext">
+      <h2 class="section-h2">Pesquise mais sobre poluição</h2>
+      <div class="container">
+        <div class="search">
+          <input id="scholl-data" type="text" placeholder="Digite um termo chave" onkeyup="showSuggestions()">
+          <div id="suggestions" class="suggestions-box"></div>
+      </div>
+      </div>
+    </section>
+
+    
+    <!-- Section ajuda -->
+    <section id="ajd" class="poll ext ajd">
+      <div class="container">
+        <img class="img-side" src="ajuda.jpg">
+        <div class="text-side">
+          <h2 class="section-h2">Como ajudar</h2>
+          <p><b>1. Reduza o uso de plásticos:</b> Prefira garrafas, sacolas e utensílios reutilizáveis para diminuir o lixo que vai para os oceanos.
+            <br><br>
+            <b>2. Descarte responsável:</b> Recicle e descarte o lixo corretamente para evitar que resíduos cheguem aos mares.
+            <br><br>
+            <b>3. Participe de limpezas:</b> Contribua para a preservação dos oceanos participando de campanhas de limpeza em praias e rios.
+            <br><br>
+            <b>4. Apoie políticas ambientais:</b> Incentive leis que reduzam o uso de plásticos e melhorem o controle de resíduos industriais.
+            <br><br>
+            <b>5. Conscientize e eduque:</b> Espalhe informações sobre a importância de proteger nossos oceanos e inspire ações sustentáveis.
+            <br><br>
+            <b>6. Escolha produtos sustentáveis:</b> Opte por marcas e produtos que respeitam o meio ambiente, ajudando a diminuir a poluição marinha.</p>
+        </div>
+      </div>
+      <p class="subtxt">Se cada pessoa contribuir com essas ações, estaremos reduzindo significativamente a poluição nos mares, protegendo a vida marinha e preservando a saúde dos ecossistemas aquáticos. Pequenas mudanças no cotidiano podem causar um grande impacto positivo, garantindo oceanos mais limpos e saudáveis para as futuras gerações. Juntos, podemos reverter os danos e criar um ambiente mais sustentável para todos.</p>
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Feito por Suelen para a Imersão Dev Alura | Google Gemini.</p>
+    </footer>
+
+
+    <!-- Section do popup -->
+    <section class="pop-over hid" style="display: none;">
+      <div class="pop-card hid" style="display: none;">
+        <img class="pop-img" src="" alt="" srcset="">
+        <div class="cont">
+          <h3 class="pop-h"></h3>
+          <p class="pop-p"></p>
+        </div>
+        <span class="close">X</span>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script> 
+</html> 
