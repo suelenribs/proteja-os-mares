@@ -27,7 +27,6 @@ function onPlayerReady(event){
 }
 
 setTimeout(() => {
-    player.playVideo();
     document.querySelector("#playerId").style.opacity = "1";
 },3000);
 
