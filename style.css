@@ -1,0 +1,349 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width:100%;
+    transition: .5s;
+    scroll-behavior: smooth;
+    position: relative; 
+}
+
+
+/*Cabeçalho*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 2em;
+    z-index: 2;
+    background-color: #00000030;
+}
+
+header div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header a {
+    display: inline-block;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 4em;
+    transition: .3s;
+}
+
+header a:hover {
+    color: #aaa
+}
+
+
+/*Banner com vídeo de fundo*/
+.hero {
+    position: relative;
+}
+
+.video-fundo {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+#playerId {
+    position: absolute;
+    width: 100vw;
+    height: calc(100vw / 16 * 9);
+    opacity: 0;
+    transition: .5s;
+}
+
+.hero .container {
+    height: 100vh;
+    width: 100vw;
+    background-color: #00000088;
+    z-index: 1;
+    position: relative;
+    padding: 5em 6em;
+    align-items: end;
+    display: flex;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 2.4em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*Sessão de cards*/
+.ext {
+    padding: 4em;
+
+    h2.section-h2 {
+        color: #000;
+        width: 1024px;
+        margin: 0 auto 1em auto;
+        font-weight: 700;
+    }
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+
+        .card {
+            width: 49%; 
+            height: 250px;
+            border-radius: 5px;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+
+            .overl {
+                width: 100%;
+                height: 100%;
+                background: #00000050;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+
+                .an-nam {
+                    color: #fff;
+                    font-family: Montserrat;
+                    text-transform: uppercase;
+                    font-size: 1.6em;
+                }
+            }
+        }
+
+        .card:hover {
+            .an-nam {
+                transform: scale(1.2);
+            }
+
+            .overl {
+                background: #00000090;
+            }
+        }
+    }
+}
+
+.ext:nth-child(even) {
+    background-color: #e6eff3;
+}
+
+
+/*Imagens de fundo dos cards*/
+.an1 {
+    background-image: url(./Baleiaazul.jpg);
+}
+
+.an2 {
+    background-image: url(./tubarao-branco.jpg);
+}
+
+.an3 {
+    background-image: url(./coral.jpg);
+}
+
+.an4 {
+    background-image: url(./cute-fish.jpg);
+}
+
+
+/*Estilo do popup*/
+.pop-over {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #00000080;
+    z-index: 99;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+
+    .pop-card {
+        width: 60vw;
+        flex-direction: row;
+        gap: 2em;
+        transition: .5s;
+        background: #fff;
+        padding: 2em;
+        border-radius: 5px;
+        align-items: center;
+
+        .pop-img {
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        .cont {
+            height: fit-content;
+            width: 50%;
+
+            .pop-h {
+                font-family: poppins;
+                font-size: 2em;
+                margin-bottom: 0.5em;
+                line-height: 1.2em;
+                text-align: left;
+            }
+    
+            .pop-p {
+                font-family: nunito;
+                font-size: 1em;
+                margin-bottom: 2.5em;
+            }
+        }
+
+        .close {
+            font-family: montserrat; 
+            font-weight: 700;
+            color: red;
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            cursor: pointer;
+            z-index: 999; 
+        }
+    }
+
+    .pop-card.hid {
+        opacity: 0;
+    }
+
+
+}
+
+.pop-over.hid {
+    opacity: 0;
+}
+
+
+/* Estilo poluição*/
+.ext.poll {
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3em;
+        margin-bottom: 2em;
+
+        .img-side {
+            width: 45%;
+            border-radius: 5px;
+        }
+        
+        .text-side {
+            width: 50%;
+
+            .section-h2 {
+                margin-bottom: 0.3em; 
+            }
+
+            p {
+                font-family: nunito;
+                text-align: justify;
+                font-size: 1em;
+            }
+
+        }
+    }
+}
+
+
+.subtxt {
+    font-size: 1.1em;
+    font-family: nunito;
+    color: #000;
+    width: 1024px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*Estilo sessão de busca*/
+.search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 100%;
+        font-size: 1.4em;
+        padding: .2em;
+        background-color: #0000;
+        border: 0;
+        border-bottom: 2px solid #000;
+        font-family: nunito;
+        color: #000;
+    }
+
+    .suggestions-box {
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: #00000080 0 0 10px;
+        border-radius: 5px;
+
+        p {
+            font-size: 1.4em;
+            font-family: nunito;
+            color: #000;
+            padding: .4em 1em;
+            border-bottom: #eee;
+            cursor: pointer;
+            background-color: #fff;
+        }
+
+        p:hover {
+            background-color: #eee;
+        }
+    }
+}
+
+.ext.tosearch {
+    padding: 10em;
+    z-index: 4;
+}
+
+.ajd .container{
+    flex-direction: row-reverse !important; 
+}
+
+
+/*Rodaé*/
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1em;
+    font-size: 1em;
+    font-family: nunito;
+    text-align: center; 
+}
