@@ -20,7 +20,10 @@ player=new YT.Player('playerId',{
 function onPlayerReady(event){
     player.mute();
     player.setVolume(0);
-    player.playVideo();
+    setTimeout(() => {
+        player.playVideo();
+        document.querySelector("#playerId").style.opacity = "1";
+    },3000);
 }
 
 
